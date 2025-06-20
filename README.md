@@ -12,6 +12,10 @@ cmake ..
 sudo make install -j8
 ```
 ```
+apt download libclang-15-dev
+sudo dpkg -i ./libclang-15-dev*.deb
+```
+```
 git clone https://gitlab.freedesktop.org/mesa/mesa.git
 git checkout -f mesa-25.1.4 -b 25.1.4
 meson build -Dvulkan-drivers=panfrost -Dgallium-drivers=panfrost -Dplatforms=x11 -Dglx=auto -Dprefix=/usr/local
