@@ -2,7 +2,7 @@
 
 ## Mesa 25.1.3
 ```
-sudo apt install python3-pkg-resources meson gcc g++ python3-pip python3-mako python3-yaml llvm llvm-15-dev bison flex glslang-tools libllvmspirvlib-15-dev libclang-cpp15-dev libxcb-randr0-dev libxcb-glx0-dev libxcb-present-dev libxxf86vm-dev opencl-headers ocl-icd-opencl-dev
+sudo apt install python3-pkg-resources meson gcc g++ python3-pip python3-mako python3-yaml llvm llvm-15-dev bison flex glslang-tools libllvmspirvlib-15-dev libclang-cpp15-dev libxcb-randr0-dev libxcb-glx0-dev libxcb-present-dev libxxf86vm-dev opencl-headers ocl-icd-opencl-dev libclang-common-15-dev
 ```
 ```
 https://github.com/KhronosGroup/SPIRV-Tools.git
