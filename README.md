@@ -31,6 +31,13 @@ cmake .. -DLLVM_DIR=/usr/lib/llvm-15/lib/cmake/llvm -DCMAKE_INSTALL_PREFIX=/usr/
 sudo make install
 ```
 ```
+https://github.com/KhronosGroup/SPIRV-Tools.git
+python3 utils/git-sync-deps
+mkdir build; cd build
+cmake ..
+sudo make install -j8
+```
+```
 git clone https://gitlab.freedesktop.org/mesa/mesa.git
 git checkout -f mesa-25.1.4 -b 25.1.4
 meson build -Dvulkan-drivers=panfrost -Dgallium-drivers=panfrost -Dplatforms=x11 -Dglx=auto -Dprefix=/usr/local
