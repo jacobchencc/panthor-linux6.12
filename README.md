@@ -27,7 +27,7 @@ sudo cmake --build build --target install
 git clone -b llvm_release_190 https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git
 cd SPIRV-LLVM-Translator
 mkdir build && cd build
-cmake .. -DLLVM_DIR=/usr/lib/llvm-15/lib/cmake/llvm -DCMAKE_INSTALL_PREFIX=/usr/local 
+cmake .. -DLLVM_DIR=/usr/lib/llvm-19/lib/cmake/llvm -DCMAKE_INSTALL_PREFIX=/usr/local 
 sudo make install
 ```
 ```
