@@ -15,7 +15,7 @@ sudo apt install byacc flex libxcb-randr0-dev libxcb-glx0-dev libxcb-present-dev
 此命令安装一系列开发库和 Python 工具。这些是像 Mesa 这样与 X Window System 和各种图形功能交互的项目常见的构建依赖项：  
 - byacc, flex: 这些是解析器和词法分析器生成器，常用于编译源代码。
 - libxcb-randr0-dev, libxcb-glx0-dev, libxcb-present-dev, libx11-xcb-dev, libxcb-dri3-dev:  这些是 XCB（X-protocol C-language Binding）库的开发文件。XCB 提供与 X Window System 的接口，这些特定的库与 RandR（Resize and Rotate 扩展）、GLX（OpenGL Extension to the X Window System）、present、核心 X11 功能和 DRI3（Direct Rendering Infrastructure 3）相关。Mesa 作为图形栈，严重依赖这些库进行显示和渲染。  
--libxshmfence-dev: 此库提供共享内存栅栏，用于进程间访问共享内存时的同步。这在图形领域对于显示服务器和图形驱动之间的有效通信至关重要。
+- libxshmfence-dev: 此库提供共享内存栅栏，用于进程间访问共享内存时的同步。这在图形领域对于显示服务器和图形驱动之间的有效通信至关重要。
 - libxxf86vm-dev: 这提供了 XFree86-VidMode 扩展的开发文件，该扩展允许应用程序更改显示器的视频模式。
 - python3-pkg-resources, python3-pip, python3-mako, python3-yaml: 这些是 Python 3 工具和库。Python 经常用于 Mesa 等大型项目的构建系统中，用于各种脚本、配置和代码生成任务。pip 是 Python 的包安装程序，mako 是一个模板库，yaml 用于处理 YAML 数据序列化。
 
