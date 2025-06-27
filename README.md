@@ -174,7 +174,7 @@ index 49ba5baf1a760..cf1fb7e8355df 100644
                         };
 ```
 
-- 下载Mali-G610 firmware镜像文件mali_csffw.bin：
+- 下载Mali-G610 firmware镜像文件mali_csffw.bin (也可以直接使用本仓库中的的mali_csffw.bin文件)：
 https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 
 - 拷贝到linux-6.12内核源码以下位置后，编译linux-6.12内核镜像并烧写：
