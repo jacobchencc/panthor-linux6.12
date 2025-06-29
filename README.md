@@ -189,7 +189,7 @@ sudo apt install byacc flex libxcb-randr0-dev libxcb-glx0-dev libxcb-present-dev
 
 - 安装meson 1.8.2版本
 ```
-sudo apt install setup-tools
+sudo apt install python-setuptools
 sudo wget https://github.com/mesonbuild/meson/releases/download/1.8.2/meson-1.8.2.tar.gz
 tar -xf meson-1.8.2.tar.gz
 sudo python3 setup.py install
@@ -201,19 +201,20 @@ sudo apt install lsb-release wget software-properties-common gnupg
 
 wget https://apt.llvm.org/llvm.sh 
 chmod +x llvm.sh
-sudo ./llvm.sh 19 all
+sudo ./llvm.sh 19
 ```
 
 - 安装SPIRV-Headers
 ```
-git clone https://github.com/KhronosGroup/SPIRV-Headers.git  
+git clone https://github.com/KhronosGroup/SPIRV-Headers.git 
+cd SPIRV-Headers
 sudo cmake -S SPIRV-Headers -B build -DCMAKE_INSTALL_PREFIX=/usr/local  
 sudo cmake --build build --target install
 ```
 
 - 安装SPIRV-LLVM-Translator
 ```
-git clone -b llvm_release_190 https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git:
+git clone -b llvm_release_190 https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git
 cd SPIRV-LLVM-Translator
 mkdir build && cd build
 cmake .. -DLLVM_DIR=/usr/lib/llvm-19/lib/cmake/llvm -DCMAKE_INSTALL_PREFIX=/usr/local
@@ -223,6 +224,7 @@ sudo make install
 - 安装SPIRV-Tools
 ```
 git clone https://github.com/KhronosGroup/SPIRV-Tools.git
+cd SPIRV-Tools
 python3 utils/git-sync-deps
 cmake ..
 sudo make install -j8
