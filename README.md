@@ -12,7 +12,8 @@ index f521d5b90ca60..a0fde3b0d3bbf 100644
  # CONFIG_BCMDHD_SDIO=y is not set
  CONFIG_BCMDHD_PCIE=y
 +CONFIG_DRM_PANTHOR=y
-+CONFIG_EXTRA_FIRMWARE="arm/mali/arch10.8/mali_csffw.bin"
++CONFIG_EXTRA_FIRMWARE="mali_csffw.bin"
++CONFIG_EXTRA_FIRMWARE_DIR="./firmware/arm/mali/arch10.8"
 ```
 
 - arch/arm64/boot/dts/rockchip/rk3588s.dtsi
